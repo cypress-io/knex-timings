@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": false,
+  "prettier.eslintIntegration": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "prettier.arrowParens": "always",
+  "prettier.semi": false,
+  "prettier.singleQuote": true
+}
