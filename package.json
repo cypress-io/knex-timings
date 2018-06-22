@@ -1,7 +1,7 @@
 {
   "name": "knex-timings",
   "description": "Prints each Knex operation and its timings",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": "https://github.com/cypress-io/knex-timings/issues",
   "config": {
@@ -62,7 +62,8 @@
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit",
     "unit": "mocha src/*-spec.js",
-    "unused-deps": "dependency-check --unused --no-dev ."
+    "unused-deps": "dependency-check --unused --no-dev .",
+    "semantic-release": "semantic-release"
   },
   "release": {
     "analyzeCommits": "simple-commit-message",
@@ -82,7 +83,8 @@
     "nsp": "3.2.1",
     "pre-git": "3.17.1",
     "prettier-eslint-cli": "4.7.1",
-    "semantic-action": "1.1.6"
+    "semantic-action": "1.1.6",
+    "semantic-release": "^15.6.0"
   },
   "dependencies": {
     "chalk": "2.4.1"
