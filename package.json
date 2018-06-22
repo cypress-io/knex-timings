@@ -66,8 +66,15 @@
     "semantic-release": "semantic-release"
   },
   "release": {
-    "analyzeCommits": "simple-commit-message",
-    "generateNotes": "github-post-release"
+    "analyzeCommits": {
+      "preset": "angular",
+      "releaseRules": [
+        {
+          "type": "break",
+          "release": "major"
+        }
+      ]
+    }
   },
   "devDependencies": {
     "babel-eslint": "7.2.3",
