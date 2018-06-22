@@ -17,6 +17,25 @@ npm install --save knex-timings
 
 ## Use
 
+Imagine you get your [knex](https://knexjs.org/) instance somehow. Then pass it to `knex-timings` function if you want to see timings and calls.
+
+```js
+const knex = Knex(knexConfig)
+if (DEBUG) {
+  // you probably want to see timings only in some situations
+  const knexTimings = require('knex-timings')
+  knexTimings(knex)
+}
+```
+
+Then your server will print something like this
+
+```text
+Example app listening at port 8641
+  - (1ms)  { select `persons`.* from `persons` order by `firstName` asc } []
+GET /persons 200 30.140 ms - 2
+```
+
 ### Small print
 
 Author: [Cypress.io](https://www.cypress.io) &copy; 2018
