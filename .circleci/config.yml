@@ -5,9 +5,18 @@ jobs:
       - image: 'circleci/node:10'
     steps:
       - checkout
+      - restore_cache:
+          key: deps-{{ .Branch }}-{{ checksum "package.json" }}
+          key: deps-{{ .Branch }}
+          key: deps-
       - run:
           name: install
-          command: npm install
+          command: npm ci
+      - save_cache:
+          key: deps-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ~/.npm
+
       - run:
           name: test
           command: npm t
