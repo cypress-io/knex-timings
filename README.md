@@ -53,7 +53,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 [npm-icon]: https://nodei.co/npm/knex-timings.svg?downloads=true
 [npm-url]: https://npmjs.org/package/knex-timings
-[ci-image]: https://travis-ci.org/cypress-io/knex-timings.svg?branch=master
-[ci-url]: https://travis-ci.org/cypress-io/knex-timings
+[ci-image]: https://circleci.com/gh/cypress-io/knex-timings.svg?style=svg
+[ci-url]: https://circleci.com/gh/cypress-io/knex-timings
 [semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-url]: https://github.com/semantic-release/semantic-release
